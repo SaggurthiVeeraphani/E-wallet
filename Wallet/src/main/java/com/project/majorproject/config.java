@@ -61,10 +61,7 @@ public class config {
         return new KafkaTemplate(getProducerFactory());
     }
 
-    @Bean
-    ObjectMapper getObjectMapper(){
-        return new ObjectMapper();
-    }
+
 
 
 }

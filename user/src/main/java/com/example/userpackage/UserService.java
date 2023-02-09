@@ -31,12 +31,11 @@ public class UserService {
      //save it in the db
      userRepository.save(user);
 
-     //send and update to the wallet module/wallet service ----> that create a new wallet from username as a String
-        kafkaTemplate.send("create_wallet",user.getUserName());
-
-
      //save it in the cache
         saveInCache(user);
+
+     //send and update to the wallet module/wallet service ----> that create a new wallet from username as a String
+        kafkaTemplate.send("create_wallet",user.getUserName());
 
         return "user added successfully";
     }
