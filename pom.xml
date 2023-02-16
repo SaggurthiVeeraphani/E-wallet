@@ -6,7 +6,8 @@
     <modules>
         <module>user</module>
 		<module>Wallet</module>
-	</modules>
+        <module>transaction</module>
+    </modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -38,6 +39,11 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -58,6 +64,11 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>top.jfunc.json</groupId>
+			<artifactId>Json-Gson</artifactId>
+			<version>1.0</version>
 		</dependency>
 	</dependencies>
 

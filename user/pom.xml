@@ -17,6 +17,11 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>top.jfunc.json</groupId>
+            <artifactId>Json-Gson</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>user</finalName>

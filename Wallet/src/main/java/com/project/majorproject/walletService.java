@@ -19,6 +19,10 @@ public class walletService {
         wallet wallet1 = wallet.builder().userName(message).balance(100).build();
 
         walletrepository1.save(wallet1);
+    }
+    @KafkaListener(topics = "update_wallet",groupId = "test1234")
+    public void updateWallet(String message){
+
 
     }
 }
