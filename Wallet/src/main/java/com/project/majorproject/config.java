@@ -60,6 +60,10 @@ public class config {
     KafkaTemplate<String, String> getKafkaTemplate(){
         return new KafkaTemplate(getProducerFactory());
     }
+    @Bean
+    ObjectMapper getObjectMapper(){
+        return new ObjectMapper();
+    }
 
 
 

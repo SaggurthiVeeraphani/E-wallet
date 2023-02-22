@@ -38,6 +38,7 @@ public class TransactionService {
         jsonObject.put("fromUser",transactionRequest.getFromUser());
         jsonObject.put("toUser",transactionRequest.getToUser());
         jsonObject.put("amount",transactionRequest.getAmount());
+        jsonObject.put("transactionId",transaction.getTransactionId());
 
         //converting to string and send it via kafka to the wallet microservice
 
